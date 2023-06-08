@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>parametre çağırma</title>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+      const Pi = 3.1419;
+      var yükseklik = 5;
+      var tabanalan = 5;
+      var yarıçap = 2.5;
+      (function silindir(değer1, değer2) {
+        var hacim = 2 * Pi * yarıçap * yükseklik;
+        var alan = Pi * yarıçap * yarıçap * yükseklik;
+        document.write(değer1 + hacim + "<br/>");
+        document.write(değer2 + alan);
+      })("Yarıçapı: ", "Alanı: ");
+      // silindir();
+    </script>
+  </body>
+</html>

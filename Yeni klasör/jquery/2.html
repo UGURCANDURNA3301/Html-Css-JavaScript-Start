@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+  </head>
+  <body>
+  <h2>MERHABA</h2>
+  <p>
+    <ul>
+      <li>
+        giriş yapınız
+      </li>
+      <li>
+        dneme 
+      </li>
+    </ul>
+  </p>
+  <p style="color: blue;">sayfa denemesi</p>
+  <p style="position:absolute;">username:<input type="text" name="username" id="username"></p>
+  <p style="position: initial;">Email:<input type="text" name="Email" id="Email"></p>
+  <p>Key Press Sayısı:<span>0</span></p>
+    <script>
+  $(function(){
+  var i=0;
+  $("input").keypress(function(){
+    $("span").text(i+=1);
+  });
+  
+  });
+
+
+
+
+   
+   // $(function(){
+      //   $("input").keydown(function(){
+      //     $(this).css("backgraund-color","blue");
+      //   });
+      //   $("input").blur(function(){
+      //     $(this).css("backgraund-color","red");
+
+      //   });
+      // });
+      
+      // $(function () {
+      //   $("p").mouseenter(function () {
+      //     alert("yazım alanına girdin");
+      //   });
+      // });
+      // $(function () {
+      //   $("p").mouseleave(function () {
+      //     alert("yazım alanından çıktın");
+      //   });
+      // });
+      // $(function () {
+      //   $("p").mouseup(function () {
+      //     alert("yazım alanına tıkladınız");
+      //   });
+      // });
+      // $(function () {
+      //   $("p").mouseover(function () {
+      //     alert("yazım alanına girdin");
+      //   });
+      // });
+      // $(function () {
+      //   $("p").hover(function () {
+      //     alert("yazım alanına girdin");
+      //   });  $(function () {
+      //   (function () {
+      //     alert("yazım alanından çıktın");
+      //   });
+      // });
+      // });
+    </script>
+  </body>
+</html>

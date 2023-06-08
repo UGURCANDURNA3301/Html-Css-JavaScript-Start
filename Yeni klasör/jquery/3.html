@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+  </head>
+  <body>
+    <h2>JQUERY</h2>
+    <p>normal paragraf</p>
+    <input type="text" value="hello jquery" /><br /><br />
+    <button type="button" id="btn">click button</button>
+    <a href="#" id="link">click link</a>
+    <script>
+      $(function () {
+        $("p").on("click", function () {
+          $(this).animate({ fontSize: "+=3px" });
+        });
+      });
+      $(function () {
+        $("h2").mouseleave("click", function () {
+          $(this).css("color", "red");
+        });
+      });
+      //   $(function () {
+      //     $("body").mousedown(function () {
+      //       alert("YAZI değişti");
+      //     });
+      //   });
+    </script>
+  </body>
+</html>

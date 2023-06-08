@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>fonksiyondan çağırma</title>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+      function parabirimi(birim, tutar) {
+        if (birim == "türk lirası") {
+          var kur = 1;
+        } else if (birim == "amerikan doları") {
+          var kur = 3;
+        } else if (birim == "euro") {
+          var kur = 4;
+        }
+        return tutarhesapla(kur, tutar);
+      }
+      function tutarhesapla(gelenkur, gelentutar) {
+        var hesapyap = gelenkur * gelentutar;
+        document.write(hesapyap);
+      }
+      parabirimi("euro", 100);
+    </script>
+  </body>
+</html>

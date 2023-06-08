@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+  </head>
+  <body>
+    <form style="border: 1px rgb(24, 97, 170); padding: 15px">
+      <label>
+        <p>username:<input type="text" name="username" id="username" /></p>
+      </label>
+      <label
+        ><p>password:<input type="text" name="password" id="password" /></p>
+      </label>
+      <input type="submit" />
+    </form>
+    <script>
+      $(function () {
+        $("username").focusin(function () {
+          $(this).css("backgraund-color", "grey");
+        });
+        $("password").focusout(function () {
+          $(this).css("backgraund-color", "aquablue");
+        });
+      });
+    </script>
+  </body>
+</html>

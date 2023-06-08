@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>iç içe fonksiyon</title>
+  </head>
+  <body>
+    <script type="text/javascript" language="javascript">
+      function deneme(parametrebir, parametreiki) {
+        function test(sonbir) {
+          var sonuç = sonbir * sonbir;
+          
+          document.write(sonuç + "<br/>");
+        }
+        return test(parametrebir) + test(parametreiki);
+      }
+      deneme(5, 7);
+    </script>
+  </body>
+</html>

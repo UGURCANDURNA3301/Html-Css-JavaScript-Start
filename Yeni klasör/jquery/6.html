@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+  </head>
+  <body>
+    <h3>JQUERY HİDE AND SHOW</h3>
+    <p>SİHİR</p>
+    <button type="text" id="show">SHOW</button>
+    <button type="text" id="hide">HİDE</button>
+    <script>
+      $(function () {
+        $("#show").click(function () {
+          $("p").hide();
+        });
+        $("#hide").click(function () {
+          $("p").show();
+        });
+      });
+    </script>
+  </body>
+</html>

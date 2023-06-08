@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+  </head>
+  <body>
+    <h2>sayfa</h2>
+    <p>
+      pencere boyutu <a><span style="color: brown">0</span></a> kez değişti
+    </p>
+    <!-- <p>yükseklik boyutu <span id="y">0</span> kez değişti</p>
+    <p>genişlik boyutu <span id="x">0</span> kez değişti</p> -->
+    <script>
+      var a = 0;
+
+      $(function () {
+        $(window).resize(function () {
+          $("span").text((a += 1));
+        });
+      });
+    </script>
+  </body>
+</html>
